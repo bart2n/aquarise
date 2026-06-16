@@ -1561,7 +1561,6 @@ export default function App() {
                   <option className="bg-black">Studio</option>
                   <option className="bg-black">1 Bedroom</option>
                   <option className="bg-black">2 Bedroom</option>
-                  <option className="bg-black">4+ Bedroom</option>
                 </select>
               </div>
               <div className="md:col-span-2 space-y-1">
