@@ -1,8 +1,8 @@
 -- Create the database if it doesn't exist
-CREATE DATABASE IF NOT EXISTS mb_city;
+CREATE DATABASE IF NOT EXISTS skyflame;
 
 -- Use the database
-USE mb_city;
+USE skyflame;
 
 -- Create the leads table for user submissions
 CREATE TABLE IF NOT EXISTS leads (

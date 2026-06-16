@@ -42,10 +42,10 @@ const apiRouter = express.Router();
 // GET /features - Keeping compatibility
 apiRouter.get('/features', (req, res) => {
   const features = [
-    { title: "The Star Beacon", text: "12 towers defining the world's first Mercedes-Benz branded city." },
-    { title: "Sensual Purity", text: "Design language evolved from automotive excellence to cityscape." },
-    { title: "Grand Promenade", text: "12 distinct lifestyle experiences curated for discovery." },
-    { title: "Nad Al Sheba", text: "Affluent district renowned for equestrian excellence." }
+    { title: "Dual-Tower living", text: "Two architectural masterpieces introducing resort-style living to Majan." },
+    { title: "Sensory Living", text: "Design language focused on immersive, sensory experiences." },
+    { title: "Majan Sanctuary", text: "A grounded sanctuary in the sky balancing nature and skyline." },
+    { title: "Horizon Luxury", text: "Designed around the luxury of having your own perfectly contained horizon." }
   ];
   res.json(features);
 });
