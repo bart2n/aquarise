@@ -30,7 +30,12 @@ import {
   Maximize2,
   ZoomIn,
   ZoomOut,
-  RotateCcw
+  RotateCcw,
+  SportShoe,
+  Baby,
+  Dumbbell,
+  Rose,
+  WavesLadder
 } from "lucide-react";
 import "./App.css";
 
@@ -59,7 +64,7 @@ const HeroSlideshow = ({ images }) => {
         >
           <img
             src={images[index]}
-            alt="Skyflame Hero"
+            alt="Aquarise Hero"
             className="w-full h-full object-cover"
           />
         </motion.div>
@@ -570,81 +575,22 @@ const CollectionModal = ({ isOpen, onClose, collection }) => {
 /* ----------------- Collections data ----------------- */
 
 const mergedGallery = [
-  `${import.meta.env.BASE_URL}bg1.jpg`,
-  `${import.meta.env.BASE_URL}bg2.jpg`,
-  `${import.meta.env.BASE_URL}bg3.jpg`,
-  `${import.meta.env.BASE_URL}bg4.jpg`,
-  `${import.meta.env.BASE_URL}bg5.jpg`,
-  `${import.meta.env.BASE_URL}bg6.jpg`,
-  `${import.meta.env.BASE_URL}bg7.jpg`,
-  `${import.meta.env.BASE_URL}bg8.jpg`,
-  `${import.meta.env.BASE_URL}bg9.jpg`,
-  `${import.meta.env.BASE_URL}bg10.jpg`
+  `${import.meta.env.BASE_URL}aquarise-horizontal.avif`,
+  `${import.meta.env.BASE_URL}bg1.avif`,
+  `${import.meta.env.BASE_URL}bg2.avif`
+  
 ];
 
-const collections = [
-  {
-    id: "tower-1",
-    name: "Skyflame Tower 1",
-    tower: "Signature Residence",
-    units: "1,378",
-    floors: "27 Residential",
-    area: "16,460.26 SQM",
-    image: `${import.meta.env.BASE_URL}bg1.jpg`,
-    highlight: "The Shape of Mastery",
-    facts: {
-      type: "Residential & Retails",
-      plot: "16,460.26 SQM / 177,176.76 SQFT",
-      levels:
-        "Ground Floor + 5 Parking Floors + 27 Residential Floors + Mechanical Floors + Roof",
-      units: {
-        studio: 584,
-        bed1: 741,
-        bed2: 52,
-        bed4: 1,
-        shops: 29
-      }
-    },
-    gallery: mergedGallery
-  },
-  {
-    id: "tower-2",
-    name: "Skyflame Tower 2",
-    tower: "Premium Residence",
-    units: "782",
-    floors: "22 Residential",
-    area: "9,251.95 SQM",
-    image: `${import.meta.env.BASE_URL}bg2.jpg`,
-    highlight: "Dual-Tower Excellence",
-    facts: {
-      type: "Residential & Retails",
-      plot: "9,251.95 SQM / 99,587.16 SQFT",
-      levels:
-        "Ground Floor + 5 Parking Floors + 22 Residential Floors + Mechanical Floors + Roof",
-      units: {
-        studio: 406,
-        bed1: 332,
-        bed2: 44,
-        shops: 19
-      }
-    },
-    gallery: mergedGallery
-  }
-];
+
 
 /* ----------------- Units data ----------------- */
 
 const unitTypes = [
-  {
-    category: "Studio",
-    items: [
-      { type: "Type 01", image: `${import.meta.env.BASE_URL}studio1.png` },
-      { type: "Type 02", image: `${import.meta.env.BASE_URL}studio2.png` },
-      { type: "Type 03", image: `${import.meta.env.BASE_URL}studio3.png` },
-    ]
-  },
+ 
   {
     category: "1 Bedroom",
+    price: "Starting AED 2,000,000",
+    size: "Starting 789 SQ FT *",
     items: [
       { type: "Type 01", image: `${import.meta.env.BASE_URL}1bedroom1.png` },
       { type: "Type 02", image: `${import.meta.env.BASE_URL}1bedroom2.png` },
@@ -655,6 +601,8 @@ const unitTypes = [
   },
   {
     category: "2 Bedroom",
+    price: "Starting AED 2,909,999",
+    size: "Starting 1090 SQ FT *",
     items: [
       { type: "Type 01", image: `${import.meta.env.BASE_URL}2bedroom1.png` },
       { type: "Type 02", image: `${import.meta.env.BASE_URL}2bedroom2.png` },
@@ -697,12 +645,12 @@ export default function App() {
   }, [notification]);
 
   const amenities = [
-    { icon: <Zap size={20} />, label: "Solar Photovoltaic" },
-    { icon: <Award size={20} />, label: "LEED Certification" },
-    { icon: <Activity size={20} />, label: "Skyline Jogging Path" },
-    { icon: <Waves size={20} />, label: "Sky Infinity Pool" },
-    { icon: <ShieldCheck size={20} />, label: "Smart System" },
-    { icon: <Car size={20} />, label: "Valet Service" }
+    { icon: <WavesLadder size={20} />, label: "Pool Deck" },
+    { icon: <SportShoe size={20} />, label: "Running Lane" },
+    { icon: <Baby size={20} />, label: "Kids’ Play Area" },
+    { icon: <Dumbbell size={20} />, label: "Gym& Fitness" },
+    { icon: <Rose size={20} />, label: "Sky Garden" },
+    { icon: <Waves size={20} />, label: "Artificial Beach" }
   ];
 
   const scrollToSection = id => {
@@ -711,16 +659,9 @@ export default function App() {
   };
 
   const heroImages = [
-    `${import.meta.env.BASE_URL}bg1.jpg`,
-    `${import.meta.env.BASE_URL}bg2.jpg`,
-    `${import.meta.env.BASE_URL}bg3.jpg`,
-    `${import.meta.env.BASE_URL}bg4.jpg`,
-    `${import.meta.env.BASE_URL}bg5.jpg`,
-    `${import.meta.env.BASE_URL}bg6.jpg`,
-    `${import.meta.env.BASE_URL}bg7.jpg`,
-    `${import.meta.env.BASE_URL}bg8.jpg`,
-    `${import.meta.env.BASE_URL}bg9.jpg`,
-    `${import.meta.env.BASE_URL}bg10.jpg`
+    `${import.meta.env.BASE_URL}aquarise-horizontal.avif`,
+  `${import.meta.env.BASE_URL}bg1.avif`,
+  `${import.meta.env.BASE_URL}bg2.avif`
   ];
 
   return (
@@ -766,7 +707,7 @@ export default function App() {
         </p>
         <h3 className="text-sm font-semibold text-white mt-4">1. Provider details</h3>
         <p>
-          This website is operated by Binghatti (the “Company”, “we”, “us”
+          This website is operated by Aquarise (the “Company”, “we”, “us”
           or “our”), established in the United Arab Emirates. Our contact details are
           set out in the “Contact” section of this site.
         </p>
@@ -862,7 +803,7 @@ export default function App() {
         </p>
         <h3 className="text-sm font-semibold text-white mt-4">1. Controller</h3>
         <p>
-          The controller responsible for processing your personal data is Binghatti
+          The controller responsible for processing your personal data is Aquarise
           (the “Company”, “we”, “us” or “our”). Our contact details
           are available in the “Contact” section of this site.
         </p>
@@ -1017,12 +958,12 @@ export default function App() {
                 DP REAL ESTATE
               </span>
               <span className="text-[10px] tracking-[0.35em] uppercase text-orange-500">
-                Skyflame | Majan
+                Aquarise | Majan
               </span>
             </div>
           </div>
           <div className="hidden md:flex items-center gap-10">
-            {["Overview", "Towers", "Units", "Amenities", "Location"].map(item => (
+            {["Overview",  "Units", "Amenities", "Location"].map(item => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
@@ -1115,7 +1056,7 @@ export default function App() {
             transition={{ delay: 0.7, duration: 1 }}
             className="text-5xl md:text-8xl font-extralight tracking-tight mb-8"
           >
-            BINGHATTI <span className="text-orange-500 italic">SKYFLAME</span>
+            <span className="text-orange-500 italic">AQUARISE</span>
           </motion.h1>
           <motion.div
             initial={{ opacity: 0 }}
@@ -1156,7 +1097,7 @@ export default function App() {
                   ease: [0.19, 0.51, 0.23, 0.99]
                 }}
                 src={`${import.meta.env.BASE_URL}hero.png`}
-                alt="Skyflame Vision"
+                alt="Aquarise Vision"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -1172,7 +1113,7 @@ export default function App() {
               </h2>
               <div className="space-y-6 text-gray-300 text-lg font-light leading-relaxed">
                 <p>
-                  Binghatti Skyflame captures the true spirit of the resort,
+                  Aquarise captures the true spirit of the resort,
                   thoughtfully redesigned into a striking high-rise. At its heart
                   is a philosophy of immersive, sensory living.
                 </p>
@@ -1188,151 +1129,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* Towers */}
-      <section
-        id="towers"
-        className="py-32 relative overflow-hidden border-y border-white/5"
-      >
-        <div className="absolute inset-0 z-0">
-          <img
-            src={`${import.meta.env.BASE_URL}bg8.jpg`}
-            alt="Dual Towers Background"
-            className="w-full h-full object-cover opacity-20 grayscale"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black" />
-        </div>
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <SectionHeading
-            subtitle="Architectural Mastery"
-            title="The Dual Residences"
-          />
-          <div className="grid md:grid-cols-2 lg:grid-cols-2 max-w-5xl mx-auto gap-12">
-            {collections.map((col, idx) => (
-              <FadeIn key={col.id} delay={idx * 0.08} fullHeight={true}>
-                <motion.div
-                  whileHover={{ y: -6, scale: 1.01 }}
-                  transition={{ duration: 0.35 }}
-                  className="group relative h-full bg-black/40 backdrop-blur-sm border border-orange-500/12 rounded-[40px] overflow-hidden transition-all duration-700 hover:border-orange-500/40 hover:shadow-[0_0_70px_rgba(255,87,34,0.14)]"
-                >
-                  <div className="absolute inset-0 z-0">
-                    <motion.img
-                      initial={{ scale: 1 }}
-                      whileHover={{ scale: 1.08 }}
-                      transition={{ duration: 1.1 }}
-                      src={col.image}
-                      alt={col.name}
-                      className="w-full h-full object-cover opacity-35 group-hover:opacity-55 grayscale-[0.2]"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/85 to-black/20" />
-                  </div>
-
-                  <div className="relative z-10 p-8 md:p-9 flex flex-col h-full min-h-[480px]">
-                    <div className="flex justify-between items-start mb-6">
-                      <div>
-                        <p className="text-[10px] uppercase tracking-[0.28em] text-orange-500/50 mb-1">
-                          {col.tower}
-                        </p>
-                        <h3 className="text-2xl md:text-[26px] font-light tracking-tight leading-snug">
-                          {col.name}
-                        </h3>
-                      </div>
-                      <button
-                        onClick={() => setSelectedCollection(col)}
-                        className="p-3 rounded-2xl bg-white/5 border border-white/15 backdrop-blur-md hover:bg-orange-500/10 transition-colors group/btn"
-                      >
-                        <Maximize2
-                          size={18}
-                          className="text-white/50 group-hover/btn:text-orange-500 transition-colors"
-                        />
-                      </button>
-                    </div>
-
-                    <p className="inline-flex items-center gap-2 text-[11px] text-orange-500 font-medium tracking-[0.22em] mb-8 border border-orange-500/20 rounded-full px-4 py-2 bg-orange-500/5 uppercase">
-                      <span className="w-1.5 h-1.5 rounded-full bg-orange-500/80" />
-                      {col.highlight}
-                    </p>
-
-                    <div className="grid grid-cols-3 gap-4 mb-8">
-                      <div className="space-y-1">
-                        <p className="text-[10px] uppercase tracking-[0.26em] text-white/40">
-                          Total Units
-                        </p>
-                        <p className="text-xl md:text-2xl font-semibold text-white">
-                          {col.units}
-                        </p>
-                      </div>
-                      <div className="space-y-1">
-                        <p className="text-[10px] uppercase tracking-[0.26em] text-white/40">
-                          Residential Floors
-                        </p>
-                        <p className="text-sm md:text-base font-medium text-white/90">
-                          {col.floors}
-                        </p>
-                      </div>
-                      <div className="space-y-1">
-                        <p className="text-[10px] uppercase tracking-[0.26em] text-white/40">
-                          Plot Area
-                        </p>
-                        <p className="text-sm md:text-base font-medium text-white/90">
-                          {col.area}
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="mt-auto pt-6 border-t border-white/10">
-                      <p className="text-[10px] uppercase tracking-[0.26em] text-white/45 mb-4">
-                        Unit Mix
-                      </p>
-                      <div className="grid grid-cols-2 gap-3 text-sm">
-                        {Object.entries(col.facts.units).map(([key, val]) => {
-                          const label = key
-                            .replace("studio", "Studio")
-                            .replace("bed1", "1 Bedroom")
-                            .replace("bed2", "2 Bedroom")
-                            .replace("bed3", "3 Bedroom")
-                            .replace("bed4", "4 Bedroom")
-                            .replace("bed5", "5 Bedroom")
-                            .replace("shops", "Retail Shops");
-                          return (
-                            <div
-                              key={key}
-                              className="flex items-center justify-between bg-white/5 border border-white/10 rounded-2xl px-3 py-2.5"
-                            >
-                              <span className="text-[11px] uppercase tracking-[0.18em] text-white/70">
-                                {label}
-                              </span>
-                              <span className="text-sm font-semibold text-white">
-                                {val}
-                              </span>
-                            </div>
-                          );
-                        })}
-                      </div>
-
-                      <div className="mt-6 flex items-center justify-between gap-3">
-                        <button
-                          onClick={() => setSelectedCollection(col)}
-                          className="flex-1 py-3 rounded-full bg-orange-500 text-white text-[10px] uppercase tracking-[0.26em] font-bold hover:bg-orange-600 transition-all shadow-[0_0_20px_rgba(255,87,34,0.25)]"
-                        >
-                          View Details
-                        </button>
-                        <button
-                          onClick={() => scrollToSection("inquiry")}
-                          className="px-4 py-3 rounded-full bg-white/5 border border-white/20 text-[10px] uppercase tracking-[0.26em] font-medium text-white/80 hover:bg-white/10 transition-all flex items-center gap-2"
-                        >
-                          Inquire
-                          <ChevronRight size={14} />
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      
       {/* Units */}
       <section id="units" className="py-32 bg-black">
         <div className="max-w-7xl mx-auto px-6">
@@ -1340,7 +1137,16 @@ export default function App() {
             subtitle="The Units"
             title="Premium Collection"
           />
-          
+
+          <FadeIn>
+            <p className="max-w-3xl mx-auto -mt-8 mb-16 text-center text-gray-400 font-light leading-relaxed">
+              Inspired by the sinuous curves of water, the Aquarise façade is a
+              testament to fluidity. A dance of glass and light, reflecting the
+              ever-changing hues of the Dubai sky. An ode to Aquarise’s visionary
+              design, where architecture becomes art.
+            </p>
+          </FadeIn>
+
           <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             {unitTypes.map((category, idx) => (
               <FadeIn key={category.category} delay={idx * 0.1}>
@@ -1354,9 +1160,19 @@ export default function App() {
                       <Home size={32} className="text-orange-500" />
                     </div>
                   </div>
-                  <h3 className="text-2xl font-light text-white tracking-[0.25em] uppercase mb-8">
+                  <h3 className="text-2xl font-light text-white tracking-[0.25em] uppercase mb-4">
                     {category.category}
                   </h3>
+                  {category.price && (
+                    <div className="mb-8 space-y-1.5">
+                      <p className="text-lg font-light text-orange-500">
+                        {category.price}
+                      </p>
+                      <p className="text-[10px] uppercase tracking-[0.3em] text-white/40">
+                        {category.size}
+                      </p>
+                    </div>
+                  )}
                   <div className="flex flex-col items-center gap-4">
                     <div className="h-px w-12 bg-orange-500/30 group-hover:w-20 transition-all duration-500" />
                     <button className="px-8 py-3.5 rounded-full bg-orange-500/10 border border-orange-500/20 text-[10px] uppercase tracking-[0.3em] font-bold text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition-all">
@@ -1412,7 +1228,7 @@ export default function App() {
                   <span className="text-orange-500/40">Nature and Skyline</span>
                 </h2>
                 <p className="text-gray-400 text-lg font-light leading-relaxed mb-10">
-                  Strategically located in Majan, Skyflame offers a grounded sanctuary.
+                  Strategically located in Majan, Aquarise offers a grounded sanctuary.
                   The community is designed for those who seek a balance between the
                   serenity of Al Barari and the vibrant energy of Dubai.
                 </p>
@@ -1449,7 +1265,7 @@ export default function App() {
               <div className="relative h-[500px] rounded-3xl overflow-hidden border border-white/10 shadow-[0_0_60px_rgba(255,87,34,0.05)]">
                 <iframe
                   title="Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14451.35444096678!2d55.38!3d25.08!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f67b9e2599107%3A0x4a9e775524bcf3ec!2sMajan%2C%20Dubai!5e0!3m2!1sen!2sae!4v1767957272068!5m2!1sen!2sae"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.795410207513!2d55.2727223!3d25.1763851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69007339d6cd%3A0x30d49df804322c3!2sBinghatti%20Aquarise!5e0!3m2!1sen!2ses!4v1782394218231!5m2!1sen!2ses"
                   className="w-full h-full border-0 grayscale invert opacity-80"
                   loading="lazy"
                 />
@@ -1465,7 +1281,7 @@ export default function App() {
           <img
             className="w-full h-full object-cover opacity-20 grayscale"
             src={`${import.meta.env.BASE_URL}bg9.jpg`}
-            alt="Skyflame Interior"
+            alt="Aquarise Interior"
           />
           <div className="absolute inset-0 bg-black/60" />
         </div>
@@ -1602,12 +1418,12 @@ export default function App() {
                   DP REAL ESTATE
                 </span>
                 <span className="text-[9px] font-medium tracking-[0.3em] uppercase text-orange-500/60 leading-none">
-                  SKYFLAME | MAJAN
+                  AQUARISE | MAJAN
                 </span>
               </div>
             </div>
             <p className="text-gray-500 text-sm max-w-sm font-light">
-              Skyflame introduces superlative, dual-tower living to the Majan
+              Aquarise introduces superlative, dual-tower living to the Majan
               community, designed around the luxury of having your own
               perfectly contained horizon.
             </p>
