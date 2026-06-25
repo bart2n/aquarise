@@ -958,7 +958,7 @@ export default function App() {
                 DP REAL ESTATE
               </span>
               <span className="text-[10px] tracking-[0.35em] uppercase text-orange-500">
-                Aquarise | Majan
+                Aquarise | Business Bay
               </span>
             </div>
           </div>
@@ -1075,7 +1075,7 @@ export default function App() {
             <div className="flex items-center gap-4 text-white/60">
               <div className="h-px w-12 bg-orange-500/30" />
               <span className="text-[10px] uppercase tracking-[0.35em]">
-                Majan | Dubai
+                Business Bay | Dubai
               </span>
               <div className="h-px w-12 bg-orange-500/30" />
             </div>
@@ -1221,7 +1221,7 @@ export default function App() {
             <div>
               <FadeIn>
                 <p className="text-[10px] uppercase tracking-[0.4em] text-orange-500 mb-6 font-medium">
-                  Majan Community
+                    Business Bay Community
                 </p>
                 <h2 className="text-4xl md:text-5xl font-extralight mb-8 leading-tight">
                   At the Heart of <br />
@@ -1418,7 +1418,7 @@ export default function App() {
                   DP REAL ESTATE
                 </span>
                 <span className="text-[9px] font-medium tracking-[0.3em] uppercase text-orange-500/60 leading-none">
-                  AQUARISE | MAJAN
+                  AQUARISE | Business Bay
                 </span>
               </div>
             </div>
