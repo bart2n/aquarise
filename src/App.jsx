@@ -1108,20 +1108,21 @@ export default function App() {
                 The Shape of Mastery
               </p>
               <h2 className="text-4xl md:text-6xl font-extralight mb-8 leading-tight">
-                Immersive <br />
-                <span className="text-orange-500/40 italic">Sensory Living.</span>
+                Shaped by <br />
+                <span className="text-orange-500/40 italic">Water.</span>
               </h2>
               <div className="space-y-6 text-gray-300 text-lg font-light leading-relaxed">
                 <p>
-                  Aquarise captures the true spirit of the resort,
-                  thoughtfully redesigned into a striking high-rise. At its heart
-                  is a philosophy of immersive, sensory living.
+                  Rising along the Dubai Water Canal in Business Bay, Aquarise draws
+                  its form from the fluid movement of water. Curving façades and
+                  flowing structural lines give the tower a distinctive presence on
+                  the Dubai skyline.
                 </p>
                 <p>
-                  The bold architecture blends the comfort of a villa with the
-                  presence of a tower, creating a seamless connection between
-                  nature and skyline. This distinctive design brings the earth
-                  upward, offering a grounded sanctuary in the sky.
+                  Reflective surfaces catch the sunlight by day and mirror the city
+                  lights by night, while interiors of polished marble, travertine,
+                  natural oak and brushed brass create a calm, refined sanctuary —
+                  a futuristic vision of movement, energy and innovation.
                 </p>
               </div>
             </FadeIn>
@@ -1142,8 +1143,8 @@ export default function App() {
             <p className="max-w-3xl mx-auto -mt-8 mb-16 text-center text-gray-400 font-light leading-relaxed">
               Inspired by the sinuous curves of water, the Aquarise façade is a
               testament to fluidity. A dance of glass and light, reflecting the
-              ever-changing hues of the Dubai sky. An ode to Aquarise’s visionary
-              design, where architecture becomes art.
+              ever-changing hues of the Dubai sky — an ode to a visionary design
+              where architecture becomes art.
             </p>
           </FadeIn>
 
@@ -1225,25 +1226,26 @@ export default function App() {
                 </p>
                 <h2 className="text-4xl md:text-5xl font-extralight mb-8 leading-tight">
                   At the Heart of <br />
-                  <span className="text-orange-500/40">Nature and Skyline</span>
+                  <span className="text-orange-500/40">Water and Skyline</span>
                 </h2>
                 <p className="text-gray-400 text-lg font-light leading-relaxed mb-10">
-                  Strategically located in Majan, Aquarise offers a grounded sanctuary.
-                  The community is designed for those who seek a balance between the
-                  serenity of Al Barari and the vibrant energy of Dubai.
+                  Set directly along the Dubai Water Canal in Business Bay, Aquarise
+                  places you at the center of the city. With Sheikh Zayed Road, Al Khail
+                  Road and Business Bay Metro Station at your doorstep, Downtown Dubai
+                  and DIFC are moments away.
                 </p>
                 <div className="grid grid-cols-2 gap-8">
                   {[
                     {
                       time: "5 Minutes",
-                      place: "Global Village"
+                      place: "Burj Khalifa & Dubai Mall"
                     },
                     {
-                      time: "15 Minutes",
-                      place: "Dubai Intl Airport"
+                      time: "10 Minutes",
+                      place: "DIFC"
                     },
-                    { time: "10 Minutes", place: "Business Bay" },
-                    { time: "20 Minutes", place: "Downtown Dubai" }
+                    { time: "15 Minutes", place: "Palm Jumeirah" },
+                    { time: "16 Minutes", place: "Dubai Intl Airport" }
                   ].map((loc, idx) => (
                     <div
                       key={idx}
@@ -1423,9 +1425,9 @@ export default function App() {
               </div>
             </div>
             <p className="text-gray-500 text-sm max-w-sm font-light">
-              Aquarise introduces superlative, dual-tower living to the Majan
-              community, designed around the luxury of having your own
-              perfectly contained horizon.
+              Like a wave, it rises. Aquarise brings superlative waterfront living
+              to Business Bay — a shimmering, wave-inspired tower on the Dubai
+              Water Canal, designed around the gentle pull of life.
             </p>
             <div className="flex flex-col gap-3 text-sm text-white/60">
               <div className="flex items-center gap-3">
@@ -1479,7 +1481,7 @@ export default function App() {
                 Location
               </span>
               <span className="text-sm font-light text-white/80">
-                Majan, Dubai
+                Business Bay, Dubai
               </span>
             </div>
             <button
