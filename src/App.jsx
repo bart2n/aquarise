@@ -342,7 +342,7 @@ const CategoryPlansModal = ({ isOpen, onClose, categoryData }) => {
                     >
                       <span className={`text-[10px] uppercase tracking-[0.2em] font-bold
                         ${activeUnit === unit ? "text-orange-500" : "text-white/40 group-hover:text-white/60"}`}>
-                        Type {idx + 1 < 10 ? `0${idx + 1}` : idx + 1}
+                        {unit.type}
                       </span>
                       <div className="aspect-[4/3] rounded-lg bg-white/5 overflow-hidden p-2">
                         <img src={unit.image} alt="Thumbnail" className="w-full h-full object-contain" />
@@ -592,11 +592,13 @@ const unitTypes = [
     price: "Starting AED 2,000,000",
     size: "Starting 789 SQ FT *",
     items: [
-      { type: "Type 01", image: `${import.meta.env.BASE_URL}1bedroom1.png` },
-      { type: "Type 02", image: `${import.meta.env.BASE_URL}1bedroom2.png` },
-      { type: "Type 03", image: `${import.meta.env.BASE_URL}1bedroom3.png` },
-      { type: "Type 04", image: `${import.meta.env.BASE_URL}1bedroom4.png` },
-      { type: "Type 05", image: `${import.meta.env.BASE_URL}1bedroom5.png` },
+      { type: "Type 01-02", image: `${import.meta.env.BASE_URL}1bedroom1.jpg` },
+      { type: "Type 03-04", image: `${import.meta.env.BASE_URL}1bedroom2.jpg` },
+      { type: "Type 05-06", image: `${import.meta.env.BASE_URL}1bedroom3.jpg` },
+      { type: "Type 07-08", image: `${import.meta.env.BASE_URL}1bedroom4.jpg` },
+      { type: "Type 09-010", image: `${import.meta.env.BASE_URL}1bedroom5.jpg` },
+      { type: "Type 011-012", image: `${import.meta.env.BASE_URL}1bedroom6.jpg` },
+      { type: "Type 013", image: `${import.meta.env.BASE_URL}1bedroom8.jpg` },
     ]
   },
   {
@@ -604,10 +606,14 @@ const unitTypes = [
     price: "Starting AED 2,909,999",
     size: "Starting 1090 SQ FT *",
     items: [
-      { type: "Type 01", image: `${import.meta.env.BASE_URL}2bedroom1.png` },
-      { type: "Type 02", image: `${import.meta.env.BASE_URL}2bedroom2.png` },
-      { type: "Type 03", image: `${import.meta.env.BASE_URL}2bedroom3.png` },
-      { type: "Type 04", image: `${import.meta.env.BASE_URL}2bedroom4.png` },
+      { type: "Type 01-02", image: `${import.meta.env.BASE_URL}2bedroom1.jpg` },
+      { type: "Type 03-04", image: `${import.meta.env.BASE_URL}2bedroom2.jpg` },
+      { type: "Type 05-06", image: `${import.meta.env.BASE_URL}2bedroom3.jpg` },
+      { type: "Type 07-08", image: `${import.meta.env.BASE_URL}2bedroom4.jpg` },
+      { type: "Type 09-010", image: `${import.meta.env.BASE_URL}2bedroom5.jpg` },
+      { type: "Type 011-012", image: `${import.meta.env.BASE_URL}2bedroom6.jpg` },
+      { type: "Island Type 01-02", image: `${import.meta.env.BASE_URL}2bedroom7.jpg` },
+      { type: "Island Type 03", image: `${import.meta.env.BASE_URL}2bedroom8.jpg` },
     ]
   }
 ];
